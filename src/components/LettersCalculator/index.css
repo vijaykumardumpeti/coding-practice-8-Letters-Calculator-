@@ -1,0 +1,60 @@
+/* Write your code here. */
+.bg-conatiner {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  background-size: cover;
+  height: 100vh;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: white;
+  width: 200px;
+}
+.image {
+  height: 400px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.span-element {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.input-element {
+  outline: none;
+  background-color: transparent;
+  border: 2px solid white;
+  height: 30px;
+  width: 350px;
+  border-radius: 5px;
+}
+.button-style {
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+
+  border: 0px none white;
+  padding: 10px;
+
+  color: #1d976c;
+  border-radius: 7px;
+  font-weight: bold;
+
+  margin-top: 20px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
