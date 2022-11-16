@@ -7,20 +7,16 @@ import './index.css'
 class LettersCalculator extends Component {
   state = {
     input: '',
-    count: 0,
   }
 
   render() {
-    const {input, count} = this.state
+    const {input} = this.state
 
     this.onTrigger = event => {
       this.setState({input: event.target.value})
-
-      this.setState(prevState => ({count: prevState.count + input.length}))
     }
 
     this.resetToZero = () => {
-      this.setState({count: 0})
       this.setState({input: ''})
     }
 
@@ -46,7 +42,7 @@ class LettersCalculator extends Component {
             className="button-style"
             type="button"
           >
-            <p>No.of letters: {count}</p>
+            <p>No.of letters: {input.length}</p>
           </button>
         </div>
 
