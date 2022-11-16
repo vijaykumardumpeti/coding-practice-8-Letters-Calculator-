@@ -15,11 +15,8 @@ class LettersCalculator extends Component {
 
     this.onTrigger = event => {
       this.setState({input: event.target.value})
-      this.setState(prevState => ({count: prevState.count + 1}))
-      console.log(event.key)
-      if (event.code === 'Backspace') {
-        this.setState(prevState => ({count: prevState.count - 1}))
-      }
+
+      this.setState(prevState => ({count: prevState.count + input.length}))
     }
 
     this.resetToZero = () => {
